@@ -497,7 +497,7 @@ margin: 0;
     padding-right: 20px;
     padding-left: 20px;
     border-radius: 296px;
-    background-color: rgba(65,65,65,.12);
+    background-color: rgb(65 65 65 / 50%);
     color: white;
     border: none;
     margin-bottom: 10px;
@@ -515,14 +515,14 @@ outline: 2px solid transparent;
 }
 
 .filter-tags button:hover {
-    background-color: rgb(65 65 65 / 46%);
+    background-color: rgb(65 65 65 / 75%);
 transition: 0.5s;
 cursor: pointer;
 }
 
 button.active.active-tag {
   outline: 2px solid var(--yellow);
-background-color: rgba(65,65,65,.12);
+    background-color: rgb(65 65 65 / 50%);
   transition: outline 0s; /* Set the transition for outline to 0s */
 }
 
