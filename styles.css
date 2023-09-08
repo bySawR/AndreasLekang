@@ -387,7 +387,6 @@ section {
 }
 
 .case-wrapper {
-    width: calc(50% - 20px);
             transition: 0.5s;
 }
 
