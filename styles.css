@@ -609,6 +609,7 @@ transition: outline 0s; /* Set the transition for outline to 0s */
 .active-section {
     background-color: var(--yellow); /* Light background color */
     color: var(--dark)!important; /* Dark text color */
+    transition: 0.5s;
 }
 
 .active-section body {
