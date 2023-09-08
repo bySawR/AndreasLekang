@@ -722,3 +722,48 @@ align-items: flex-start;
 .lightbox-content img:hover {
     opacity: 1;
 }
+
+.email-button {
+    text-decoration: none!important;
+}
+
+.email-button p:hover {
+    background-color: rgb(65 65 65 / 80%);
+transition: 0.5s;
+cursor: pointer;
+}
+
+.email-button p {
+    text-transform: none;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 296px;
+    background-color: rgb(65 65 65 / 30%);
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+transition: 0.3s;
+outline: 2px solid transparent;
+    font-size: max(0.8vw, 20px);
+    line-height: 1.4285714286;
+    width: fit-content;
+}
+
+.watermark {
+    display: flex;
+    align-items: center;
+    color: rgb(65 65 65 / 100%)!important;
+    justify-content: center;
+    transition: 0.5s;
+    text-decoration: none!important;
+}
+
+.watermark a:hover {
+    display: flex;
+    align-items: center;
+    color: white!important;
+    transition: 0.5s;
+    justify-content: center;
+    text-decoration: none!important;
+}
