@@ -536,6 +536,7 @@ margin-top: 5px;
 
 .filter-tags button.selected {
   outline: 2px solid var(--yellow);
+      background-color: rgb(65 65 65 / 80%);
 transition: outline 0s; /* Set the transition for outline to 0s */
 }
 
