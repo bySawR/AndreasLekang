@@ -484,12 +484,6 @@ main a.case-wrapper a:before {
 .header {
     padding-bottom: 5vh;
 }
-  #name {
-    display: none;
-  }
-h1#initials {
-margin: 0;
-}
 }
 .filter-tags button {
     text-transform: none;
