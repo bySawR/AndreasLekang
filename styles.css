@@ -554,7 +554,7 @@ transition: outline 0s; /* Set the transition for outline to 0s */
 
 .myGallery img {
   width: 100%;
-  max-height: 100%; /* Set a maximum height for the images */
+  min-height: 600px; /* Set a maximum height for the images */
   object-fit: cover; /* Maintain aspect ratio while covering the available space */
 }
 
