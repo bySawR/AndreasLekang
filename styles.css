@@ -618,10 +618,17 @@ transition: outline 0s; /* Set the transition for outline to 0s */
 h1.ommeg {
     font-size: 20px;
     padding-bottom: 40px;
-    line-height: 24px;
+    line-height: 28px;
     width: 85%;
 }
 
 h1.ommeg-heading {
-    font-size: 40px;
+    font-size: 4vw;
+margin-right: 20px;
+padding-bottom: 60px;
+}
+
+.portrett-bilde {
+    width: 100%;
+    border-radius: 20px;
 }
