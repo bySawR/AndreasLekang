@@ -18,6 +18,14 @@
 
 <main>
     <div id="home" class="section">
+<!-- Lightbox HTML -->
+<div id="lightbox" class="lightbox" style="display: none;" onclick="closeLightbox()">
+    <div class="lightbox-content">
+        <span class="close-button" onclick="event.stopPropagation(); closeLightbox()">&times;</span>
+        <img id="lightbox-image" src="" alt="Lightbox Image">
+    </div>
+</div>
+
         <div class="filter-tags fade-up visible">
             <button data-tag="musikk">Musikk</button>
             <button data-tag="portretter">Portretter</button>
@@ -186,6 +194,34 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             }
         });
+    });
+});
+
+</script>
+
+<script>
+// Function to open the lightbox
+function openLightbox(imageSrc) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+
+    lightboxImage.src = imageSrc;
+    lightbox.style.display = "flex"; // Display the lightbox when an image is clicked
+}
+
+// Rest of your JavaScript remains unchanged
+
+// Function to close the lightbox
+function closeLightbox() {
+    const lightbox = document.getElementById("lightbox");
+    lightbox.style.display = "none";
+}
+
+// Add click event listeners to your gallery images
+const galleryImages = document.querySelectorAll(".case-wrapper img");
+galleryImages.forEach(img => {
+    img.addEventListener("click", function () {
+        openLightbox(this.src);
     });
 });
 
