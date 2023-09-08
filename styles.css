@@ -628,7 +628,19 @@ margin-right: 20px;
 padding-bottom: 60px;
 }
 
+h1.ommeg-heading-left {
+    font-size: 4vw;
+margin-left: 40px;
+padding-bottom: 60px;
+}
+
 .portrett-bilde {
     width: 100%;
     border-radius: 20px;
+}
+
+.center-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
