@@ -587,3 +587,31 @@ transition: outline 0s; /* Set the transition for outline to 0s */
 .myGallery .item:hover .caption {
   transform: translateY(0%);
 }
+
+.active-section {
+    background-color: var(--yellow); /* Light background color */
+    color: var(--dark)!important; /* Dark text color */
+}
+
+.active-section body {
+    background-color: var(--yellow); /* Light background color */
+    color: var(--dark)!important; /* Dark text color */
+}
+
+.active-section * {
+    color: var(--dark)!important; /* Dark text color */
+}
+
+.active-section#home h1 {
+    color: white!important; /* Dark text color */
+}
+
+/* Body background color when "hjem" is active */
+.active-section#home body {
+    background-color: var(--dark);
+}
+
+.active-section .header nav a:hover, a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--dark);
+}

@@ -43,7 +43,19 @@
     <!-- Other sections go here -->
 
 </main>
-
+<div id="om-meg" class="section" style="display: none;">
+    <section class="no-top-padding">
+        <div class="seksjon-wrapper">
+            <div class="innhold-25 fade-up">
+                 <h1 class="subtitle">Meg</h1>
+            </div>
+            <div class="innhold-75 fade-up">
+                <h1>Tester</h1>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
 <script src="script.js" type="text/javascript"></script>
 <script>
     // Intersection Observer code
@@ -73,35 +85,50 @@
     });
 </script>
 <script>
-    function showSection(sectionId, scrollToProsjekter) {
-        // Hide all sections
-        const sections = document.querySelectorAll('.section');
-        sections.forEach(section => {
-            section.style.display = 'none';
-        });
+function showSection(sectionId, scrollToProsjekter) {
+    // Hide all sections
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        section.style.display = 'none';
+        section.classList.remove('active-section');
+    });
 
-        // Show the selected section
-        const selectedSection = document.getElementById(sectionId);
-        selectedSection.style.display = 'block';
+    // Show the selected section
+    const selectedSection = document.getElementById(sectionId);
+    selectedSection.style.display = 'block';
 
-        // Update the URL hash fragment
-        window.location.hash = sectionId;
+    // Update the URL hash fragment
+    window.location.hash = sectionId;
 
-        // Check if scrollToProsjekter is true, and scroll to the Prosjekter section within the Home section
-        if (scrollToProsjekter && sectionId === 'home') {
-            const prosjekterSection = document.getElementById('prosjekter');
-            if (prosjekterSection) {
-                // Calculate the position of the Prosjekter section relative to the viewport
-                const offset = prosjekterSection.getBoundingClientRect().top;
-
-                // Scroll to the Prosjekter section manually
-                window.scrollTo({
-                    top: window.scrollY + offset,
-                    behavior: 'smooth',
-                });
-            }
+    // Check if scrollToProsjekter is true, and scroll to the Prosjekter section within the Home section
+    if (scrollToProsjekter && sectionId === 'home') {
+        const prosjekterSection = document.getElementById('prosjekter');
+        if (prosjekterSection) {
+            const offset = prosjekterSection.getBoundingClientRect().top;
+            window.scrollTo({
+                top: window.scrollY + offset,
+                behavior: 'smooth',
+            });
         }
     }
+
+    // Update the header link colors
+    const headerLinks = document.querySelectorAll('.header a');
+    headerLinks.forEach(link => {
+        if (link.getAttribute('href').substring(1) === sectionId) {
+            link.classList.add('active-link');
+        } else {
+            link.classList.remove('active-link');
+        }
+    });
+
+    // Update the body background color for the "om-meg" section
+    if (sectionId === 'om-meg') {
+        document.body.classList.add('active-section');
+    } else {
+        document.body.classList.remove('active-section');
+    }
+}
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
