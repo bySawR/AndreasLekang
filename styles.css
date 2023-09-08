@@ -546,17 +546,34 @@ transition: outline 0s; /* Set the transition for outline to 0s */
 }
 
 .myGallery {
+}
+
+
+.myGallery {
+}
+
+.grid-container {
   display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  grid-gap: 10px; /* Optional gap between grid items */
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr; /* This will make the row span the full container width */
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.grid-item {
+  /* Define the size for each grid item as needed */
 }
 
 
 .myGallery img {
   width: 100%;
-  height: auto; /* Set a maximum height for the images */
+  height: 100%; /* Set a maximum height for the images */
   object-fit: cover; /* Maintain aspect ratio while covering the available space */
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .myGallery .item {
@@ -579,9 +596,9 @@ transition: outline 0s; /* Set the transition for outline to 0s */
   max-height: 100%;
   overflow: auto;
   box-sizing: border-box;
-  transition: transform .5s;
+  transition: transform 0.5s;
   transform: translateY(100%);
-  background: rgba(0, 0, 0, .7);
+  background: rgba(0, 0, 0, 0.7);
   color: rgb(255, 255, 255);
 }
 
