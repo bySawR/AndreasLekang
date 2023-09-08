@@ -514,7 +514,7 @@ outline: 2px solid transparent;
 }
 
 .filter-tags button:hover {
-    background-color: rgb(65 65 65 / 75%);
+    background-color: rgb(65 65 65 / 80%);
 transition: 0.5s;
 cursor: pointer;
 }
