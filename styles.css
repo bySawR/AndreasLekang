@@ -698,9 +698,8 @@ align-items: flex-start;
 
 .close-button {
     position: absolute;
-    top: 3px;
     right: 3px;
-    font-size: 30px;
+    font-size: 50px;
     cursor: pointer;
     color: #fff;
     z-index: 1;
