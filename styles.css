@@ -497,7 +497,7 @@ main a.case-wrapper a:before {
     border: none;
     margin-bottom: 10px;
 transition: 0.3s;
-outline: 2px solid transparent;
+outline: 3px solid transparent;
     font-size: max(0.8vw, 20px);
     line-height: 1.4285714286;
 }
@@ -515,7 +515,7 @@ cursor: pointer;
 }
 
 button.active.active-tag {
-  outline: 2px solid var(--yellow);
+  outline: 3px solid var(--yellow);
     background-color: rgb(65 65 65 / 50%);
   transition: outline 0s; /* Set the transition for outline to 0s */
 }
@@ -530,7 +530,7 @@ margin-top: 5px;
     }
 
 .filter-tags button.selected {
-  outline: 2px solid var(--yellow);
+  outline: 3px solid var(--yellow);
       background-color: rgb(65 65 65 / 80%);
 transition: outline 0s; /* Set the transition for outline to 0s */
 }
@@ -706,7 +706,6 @@ align-items: flex-start;
     z-index: 1;
 height:30px;
 width: 30px;
-outline: 2px solid white;
 border-radius: 400px;
 display: flex;
 align-items: center;
