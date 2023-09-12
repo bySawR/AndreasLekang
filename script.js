@@ -1,29 +1,27 @@
-
-    // Intersection Observer code
-    function handleIntersection(entries, observer) {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            } else {
-                entry.target.classList.remove('visible');
-                // Remove the 'visible' class when the element is not in the viewport
-            }
-        });
-    }
-
-    // Create an Intersection Observer
-    const observer = new IntersectionObserver(handleIntersection, {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1,
+// Intersection Observer code
+function handleIntersection(entries, observer) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        } else {
+            entry.target.classList.remove('visible');
+        }
     });
+}
 
-    // Add elements with the "fade-up" class to the observer
-    const fadeUpElements = document.querySelectorAll('.fade-up');
-    fadeUpElements.forEach((element) => {
-        observer.observe(element);
-    });
+// Create an Intersection Observer
+const observer = new IntersectionObserver(handleIntersection, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1,
+});
+
+// Add elements with the "fade-up" class to the observer
+const fadeUpElements = document.querySelectorAll('.fade-up');
+fadeUpElements.forEach((element) => {
+    observer.observe(element);
+});
+
 
 
 function showSection(sectionId, scrollToProsjekter) {
