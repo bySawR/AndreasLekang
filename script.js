@@ -16,7 +16,7 @@
     const observer = new IntersectionObserver(handleIntersection, {
         root: null,
         rootMargin: '0px',
-        threshold: 0.2,
+        threshold: 0.1,
     });
 
     // Add elements with the "fade-up" class to the observer
