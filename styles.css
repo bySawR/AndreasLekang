@@ -256,7 +256,28 @@ h1.subtitle {
 .header a {
     font-size: max(3vw, 20px)!important;
     line-height: 1.4285714286;
+}
 
+.header {
+        flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header h1 {
+        width: unset!important;
+}
+
+.header-nav-list, .header h1 {
+    font-size: max(1.4vw, 20px);
+    line-height: 1.4285714286;
+color: white;
+width: 100%;
+}
+
+nav {
+width: 100%!important;
+padding-top: 20px;
+justify-content: flex-start!important;
 }
 
 .header-nav-list, .header h1 {
@@ -280,7 +301,8 @@ nav {
     display: flex;
     gap: 35px;
     color: white!important;
-
+width: 40%;
+    justify-content: flex-end;
 }
 
 .header a {
@@ -293,6 +315,7 @@ nav {
     font-size: max(1.4vw, 20px);
     line-height: 1.4285714286;
 color: white;
+width: 40%;
 }
 
 
@@ -463,6 +486,13 @@ main a.case-wrapper a:before {
     padding-top: 2vh;
     padding-bottom: 5vh;
 }
+.case-wrapper img {
+    border-radius: 5px!important;
+}
+.grid-container {
+    grid-template-columns: repeat(2, 1fr)!important;
+}
+
 .innhold-75 {
     width: 100%;
 }
@@ -793,3 +823,4 @@ transition: 0.3s;
 opacity: 0.4;
 transition: 0.3s;
 }
+
