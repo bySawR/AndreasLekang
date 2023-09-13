@@ -928,3 +928,7 @@ nav {
 .naturvinforbundet {
         grid-template-columns: repeat(2, 1fr)!important;
 }
+
+.naturvinforbundet .case-wrapper img {
+    filter: brightness(100%);
+}
