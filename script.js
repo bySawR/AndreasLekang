@@ -138,10 +138,16 @@ galleryImages.forEach(img => {
     });
 });
 
+// Add an event listener for the browser's back button
+window.addEventListener("popstate", function (event) {
+    closeLightbox();
+});
+
     
         function sendEmail() {
             window.location.href = 'mailto:andreas.lekang@gmail.com';
         }
+
 // Function to toggle the mobile menu and overlay
 function toggleMobileMenu() {
     const mobileMenu = document.querySelector('.mobile-menu-content');
