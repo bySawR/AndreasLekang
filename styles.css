@@ -856,7 +856,11 @@ opacity: 0.4;
 transition: 0.3s;
 }
 
-.mobile-menu, .mobile-menu-content {
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-content {
     display: none;
 }
 
