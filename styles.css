@@ -248,6 +248,11 @@ h1.subtitle {
 }
 
 @media only screen and (max-width: 1024px) {
+.email-button p {
+    padding-right: 20px!important;
+    padding-left: 20px!important;
+}
+
 h1.subtitle {
     font-size: 3vw;
     line-height: 1.4285714286;
@@ -261,6 +266,7 @@ h1.subtitle {
 .header {
         flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 0px!important;
 }
 
 .header h1 {
@@ -551,10 +557,30 @@ button.active.active-tag {
 
 @media only screen and (max-width: 1024px) {
     .filter-tags button {
-    font-size: 3vw;
+    font-size: 5vw!important;
     line-height: 1.4285714286;
         margin-bottom: 5px;
 margin-top: 5px;
+}
+
+.portrett-bilde {
+    width: 100%!important;
+    }
+h1.ommeg-heading {
+    font-size: 7vw!important;
+padding-bottom: 0px!important;
+line-height: 10vw!important;
+}
+h1.ommeg-heading-left {
+    margin-left: 0px!important;
+        font-size: 7vw!important;
+padding-bottom: 0px!important;
+line-height: 10vw!important;
+}
+
+.reverse {
+    display: flex;
+    flex-direction: column-reverse!important;
 }
     }
 
@@ -756,6 +782,12 @@ align-items: center;
     text-decoration: none!important;
 }
 
+.contact-wrapper {
+    display: inline-flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+
 .email-button p:hover {
     background-color: rgb(65 65 65 / 80%);
 transition: 0.5s;
@@ -763,18 +795,18 @@ cursor: pointer;
 }
 
 .email-button p {
-    text-transform: none;
+text-transform: none;
     padding: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
     border-radius: 296px;
     background-color: rgb(65 65 65 / 30%);
     color: white;
     border: none;
     margin-bottom: 10px;
-transition: 0.3s;
-outline: 2px solid transparent;
-    font-size: max(0.8vw, 20px);
+    transition: 0.3s;
+    outline: 2px solid transparent;
+    font-size: max(2.8vw, 20px);
     line-height: 1.4285714286;
     width: fit-content;
 }
