@@ -856,3 +856,69 @@ opacity: 0.4;
 transition: 0.3s;
 }
 
+.mobile-menu, .mobile-menu-content {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+.mobile-menu {
+    display: block;
+    color: white;
+}
+
+.mobile-menu iconify-icon {
+    color: white;
+}
+
+.mobile-menu iconify-icon:hover {
+    display: block;
+    color: var(--yellow);
+}
+
+nav {
+    display: none;
+    }
+.sosial {
+    display: none;
+}
+.mobile-menu-content {
+    background-color: var(--dark)!important;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.active-section .mobile-menu-content {
+    background-color: var(--yellow)!important;
+}
+
+.mobile-menu-content a {
+    color: white;
+    font-size: 40px!important;
+}
+.mobile-menu iconify-icon {
+    color: white;
+}
+
+.mobile-menu.iconify-icon:hover {
+    color: var(--yellow);
+}
+
+/* CSS for the background overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity and color as needed */
+    z-index: 1000;
+}
+}
+
+

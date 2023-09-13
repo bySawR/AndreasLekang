@@ -142,3 +142,35 @@ galleryImages.forEach(img => {
         function sendEmail() {
             window.location.href = 'mailto:andreas.lekang@gmail.com';
         }
+// Function to toggle the mobile menu and overlay
+function toggleMobileMenu() {
+    const mobileMenu = document.querySelector('.mobile-menu-content');
+    const overlay = document.getElementById('overlay');
+
+    if (mobileMenu.style.display === 'flex') {
+        mobileMenu.style.display = 'flex';
+        overlay.style.display = 'none';
+    } else {
+        mobileMenu.style.display = 'flex';
+        overlay.style.display = 'block';
+    }
+}
+
+// Add an event listener to the mobile menu icon
+const mobileMenuIcon = document.querySelector('.mobile-menu');
+mobileMenuIcon.addEventListener('click', toggleMobileMenu);
+
+// Function to close the mobile menu and overlay when a link is clicked
+function closeMobileMenu() {
+    const mobileMenu = document.querySelector('.mobile-menu-content');
+    const overlay = document.getElementById('overlay');
+
+    mobileMenu.style.display = 'none';
+    overlay.style.display = 'none';
+}
+
+// Add an event listener to each mobile menu link to close the menu when clicked
+const mobileMenuLinks = document.querySelectorAll('.mobile-menu-content a');
+mobileMenuLinks.forEach((link) => {
+    link.addEventListener('click', closeMobileMenu);
+});
