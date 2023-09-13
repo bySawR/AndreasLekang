@@ -55,12 +55,12 @@ color: white;
 
 a {
 text-decoration: none;
-text-underline-offset: 6px!important;
+text-underline-offset: 8px!important;
 }
 
-.header nav a:hover, a:hover {
+.header a:hover {
     text-decoration: underline;
-    text-decoration-color: var(--yellow)
+    text-decoration-color: var(--yellow);
 }
 
 p a {
@@ -611,6 +611,7 @@ transition: outline 0s; /* Set the transition for outline to 0s */
 
 .active-section * {
     color: var(--dark)!important; /* Dark text color */
+    text-decoration-color: var(--dark)!important;
 }
 
 .active-section#home h1 {

@@ -142,4 +142,3 @@ galleryImages.forEach(img => {
         function sendEmail() {
             window.location.href = 'mailto:andreas.lekang@gmail.com';
         }
-    
