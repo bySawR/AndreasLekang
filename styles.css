@@ -770,3 +770,25 @@ outline: 2px solid transparent;
         display: flex;
     gap: 20px;
 }
+
+.sosial iconify-icon {
+color: white;
+transition: 0.3s;
+}
+
+
+.sosial iconify-icon:hover {
+color: var(--yellow);
+transition: 0.3s;
+}
+
+
+.active-section .sosial iconify-icon {
+transition: 0.3s;
+}
+
+
+.active-section .sosial iconify-icon:hover {
+opacity: 0.4;
+transition: 0.3s;
+}
