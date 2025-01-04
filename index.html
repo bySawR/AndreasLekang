@@ -1,289 +1,321 @@
 <!DOCTYPE html>
 <html>
+
 <head>
    <title>Andreas Lekang</title>
-       <meta charset="UTF-8">
-    <meta name="description" content="Andreas Lekangs fotografi portfolio">
-    <meta name="keywords" content="photography, portfolio, Andreas Lekang, Oslo">
-    <meta name="author" content="Andreas Lekang">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script type="text/javascript" src="script.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="shortcut icon" href="favicon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Questrial&display=block" rel="stylesheet">
-<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L6S931DKV0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+   <meta charset="UTF-8">
+   <meta name="description" content="Andreas Lekangs fotografi portfolio">
+   <meta name="keywords" content="photography, portfolio, Andreas Lekang, Oslo">
+   <meta name="author" content="Andreas Lekang">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script type="text/javascript" src="script.js" defer></script>
+   <script type="text/javascript" src="slider.js" defer></script>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
+   <link rel="shortcut icon" href="favicon.ico">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Questrial&display=block" rel="stylesheet">
+   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6S931DKV0"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
 
-  gtag('config', 'G-L6S931DKV0');
-</script>
+      gtag('config', 'G-L6S931DKV0');
+   </script>
 </head>
+
 <body>
 
-<div class="header fade-up">
-    <h1 id="name"><a href="#" onclick="showSection('home', false)">Andreas Lekang®</a></h1>
-     <div class="mobile-menu" onclick="toggleMobileMenu()">
-   <iconify-icon icon="ci:menu-duo-md" width="45"></iconify-icon>
-</div>
-    <div class="mobile-menu-content">
-        <a href="#" onclick="showSection('home', false)">Bilder</a>
-        <a href="#" onclick="showSection('om-meg', false)">Om meg</a>
-        <a href="#" onclick="showSection('kontakt', false)">Kontakt</a>
-</div>
-       <div class="overlay" id="overlay">
-</div>
-        <div class="sosial">
-       <a href="https://no.linkedin.com/in/andreas-lekang-a73377131" target="_blank">
-        <iconify-icon icon="ri:linkedin-fill" width="25"></iconify-icon>
-    </a>
+   <div class="header fade-up">
+      <h1 id="name"><a href="#" onclick="showSection('home', false)">Andreas Lekang®</a></h1>
+      <div class="mobile-menu" onclick="toggleMobileMenu()">
+         <iconify-icon icon="ci:menu-duo-md" width="45"></iconify-icon>
+      </div>
+      <div class="mobile-menu-content">
+         <a href="#" onclick="showSection('home', false)">Bilder</a>
+         <a href="#" onclick="showSection('om-meg', false)">Om meg</a>
+         <a href="#" onclick="showSection('kontakt', false)">Kontakt</a>
+      </div>
+      <div class="overlay" id="overlay">
+      </div>
+      <div class="sosial">
+         <a href="https://no.linkedin.com/in/andreas-lekang-a73377131" target="_blank">
+            <iconify-icon icon="ri:linkedin-fill" width="25"></iconify-icon>
+         </a>
 
-    <a href="https://www.instagram.com/andreaslekang/" target="_blank">
+         <a href="https://www.instagram.com/andreaslekang/" target="_blank">
             <iconify-icon icon="mdi:instagram" width="25"></iconify-icon>
-    </a>
+         </a>
 
-    <a href="https://www.facebook.com/profile.php?id=100000740613256" target="_blank">
-<iconify-icon icon="mdi:facebook" width="25"></iconify-icon>
-    </a>
-    </div>
-    <nav>
-        <a href="#" onclick="showSection('home', false)">Bilder</a>
-        <a href="#" onclick="showSection('om-meg', false)">Om meg</a>
-        <a href="#" onclick="showSection('kontakt', false)">Kontakt</a>
-    </nav>
-</div>
-<main>
-    <div id="home" class="section">
-<!-- Lightbox HTML -->
-<div id="lightbox" class="lightbox" style="display: none;" onclick="closeLightbox()">
-    <div class="lightbox-content">
-        <span class="close-button" onclick="event.stopPropagation(); closeLightbox()">&times;</span>
-        <img id="lightbox-image" src="" alt="Lightbox Image">
-    </div>
-</div>
+         <a href="https://www.facebook.com/profile.php?id=100000740613256" target="_blank">
+            <iconify-icon icon="mdi:facebook" width="25"></iconify-icon>
+         </a>
+      </div>
+      <nav>
+         <a href="#" onclick="showSection('home', false)">Bilder</a>
+         <a href="#" onclick="showSection('om-meg', false)">Om meg</a>
+         <a href="#" onclick="showSection('kontakt', false)">Kontakt</a>
+      </nav>
+   </div>
+   <main>
+      <div id="home" class="section">
+         <!-- Lightbox HTML -->
+         <div id="lightbox" class="lightbox" style="display: none;" onclick="closeLightbox()">
+            <div class="lightbox-content">
+               <span class="close-button" onclick="event.stopPropagation(); closeLightbox()">&times;</span>
+               <img id="lightbox-image" src="" alt="Lightbox Image">
+            </div>
+         </div>
 
-        <div class="filter-tags visible fade-up">
+         <div class="slider fade-up">
+            <div class="slides">
+               <div class="slide"><img src="images/PORTRETTER/4.jpg" alt="Image 1"></div>
+               <div class="slide"><img src="images/PORTRETTER/2.jpg" alt="Image 2"></div>
+               <div class="slide"><img src="images/PORTRETTER/1.jpg" alt="Image 3"></div>
+            </div>
+            <div class="controls">
+               <button class="control prev">&#8249;</button>
+               <button class="control next">&#8250;</button>
+            </div>
+         </div>
+
+         <div class="lightbox" id="lightbox">
+            <button class="lightbox-close">&times;</button>
+            <img src="" alt="">
+         </div>
+
+         <div class="filter-tags visible fade-up">
             <button data-tag="musikk">Musikk</button>
             <button data-tag="portretter">Portretter</button>
             <button data-tag="sport">Sport</button>
             <button data-tag="landskap">Landskap</button>
             <button data-tag="presse">Presse</button>
             <!-- Add more filter tags as needed -->
-        </div>
-<section class="no-top-padding">
-<div class="seksjon-wrapper">
-   <div class="innhold-100 fade-up visible">
-      <div class="myGallery">
-         <div class="grid-container">
-            <div class="row fade-up">
-               <div class="case-wrapper fade-up" data-tags="landskap">
-                  <img src="images/LANDSKAP/1.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="musikk">
-                  <img src="images/MUSIKK/1.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="portretter">
-                  <img src="images/PORTRETTER/1.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="presse">
-                  <img src="images/PRESSE/1.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="sport">
-                  <img src="images/SPORT/1.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="landskap">
-                  <img src="images/LANDSKAP/4.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="musikk">
-                  <img src="images/MUSIKK/4.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="portretter">
-                  <img src="images/PORTRETTER/4.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="presse">
-                  <img src="images/PRESSE/4.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="sport">
-                  <img src="images/SPORT/4.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="landskap">
-                  <img src="images/LANDSKAP/7.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="musikk">
-                  <img src="images/MUSIKK/7.jpg" class="grid-item fade-up">
-               </div>
-            </div>
-            <div class="row fade-up">
-               <div class="case-wrapper fade-up" data-tags="landskap">
-                  <img src="images/LANDSKAP/2.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="musikk">
-                  <img src="images/MUSIKK/2.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="portretter">
-                  <img src="images/PORTRETTER/2.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="presse">
-                  <img src="images/PRESSE/2.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="sport">
-                  <img src="images/SPORT/2.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="landskap">
-                  <img src="images/LANDSKAP/5.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="musikk">
-                  <img src="images/MUSIKK/5.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="landskap">
-                  <img src="images/LANDSKAP/11.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="presse">
-                  <img src="images/PRESSE/5.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="sport">
-                  <img src="images/SPORT/5.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="portretter">
-                  <img src="images/PORTRETTER/5.jpg" class="grid-item fade-up">
-               </div>
-            </div>
-            <div class="row fade-up">
-               <div class="case-wrapper fade-up" data-tags="landskap">
-                  <img src="images/LANDSKAP/3.jpg" class="grid-item fade-up">
-               </div>
-                <div class="case-wrapper fade-up" data-tags="landskap">
-                  <img src="images/LANDSKAP/9.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="musikk">
-                  <img src="images/MUSIKK/3.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="portretter">
-                  <img src="images/PORTRETTER/3.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="presse">
-                  <img src="images/PRESSE/3.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="sport">
-                  <img src="images/SPORT/3.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="landskap">
-                  <img src="images/LANDSKAP/6.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="musikk">
-                  <img src="images/MUSIKK/6.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="portretter">
-                  <img src="images/PORTRETTER/6.jpg" class="grid-item fade-up">
-               </div>
-               <a href="#" onclick="showSection('naturvinforbundet', true)">
-               <div class="case-wrapper fade-up" data-tags="presse">
-                  <img src="images/PRESSE/6.jpg" class="grid-item fade-up">
-               </div>
-               </a>
-               <div class="case-wrapper fade-up" data-tags="presse">
-                  <img src="images/PRESSE/7.jpg" class="grid-item fade-up">
-               </div>
-            </div>
          </div>
+         <section class="no-top-padding">
+            <div class="seksjon-wrapper">
+               <div class="innhold-100 fade-up visible">
+                  <div class="myGallery">
+                     <div class="grid-container">
+                        <div class="row fade-up">
+                           <div class="case-wrapper fade-up" data-tags="landskap">
+                              <img src="images/LANDSKAP/1.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="musikk">
+                              <img src="images/MUSIKK/1.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="portretter">
+                              <img src="images/PORTRETTER/1.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="presse">
+                              <img src="images/PRESSE/1.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="sport">
+                              <img src="images/SPORT/1.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="landskap">
+                              <img src="images/LANDSKAP/4.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="musikk">
+                              <img src="images/MUSIKK/4.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="portretter">
+                              <img src="images/PORTRETTER/4.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="presse">
+                              <img src="images/PRESSE/4.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="sport">
+                              <img src="images/SPORT/4.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="landskap">
+                              <img src="images/LANDSKAP/7.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="musikk">
+                              <img src="images/MUSIKK/7.jpg" class="grid-item fade-up">
+                           </div>
+                        </div>
+                        <div class="row fade-up">
+                           <div class="case-wrapper fade-up" data-tags="landskap">
+                              <img src="images/LANDSKAP/2.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="musikk">
+                              <img src="images/MUSIKK/2.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="portretter">
+                              <img src="images/PORTRETTER/2.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="presse">
+                              <img src="images/PRESSE/2.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="sport">
+                              <img src="images/SPORT/2.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="landskap">
+                              <img src="images/LANDSKAP/5.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="musikk">
+                              <img src="images/MUSIKK/5.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="landskap">
+                              <img src="images/LANDSKAP/11.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="presse">
+                              <img src="images/PRESSE/5.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="sport">
+                              <img src="images/SPORT/5.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="portretter">
+                              <img src="images/PORTRETTER/5.jpg" class="grid-item fade-up">
+                           </div>
+                        </div>
+                        <div class="row fade-up">
+                           <div class="case-wrapper fade-up" data-tags="landskap">
+                              <img src="images/LANDSKAP/3.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="landskap">
+                              <img src="images/LANDSKAP/9.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="musikk">
+                              <img src="images/MUSIKK/3.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="portretter">
+                              <img src="images/PORTRETTER/3.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="presse">
+                              <img src="images/PRESSE/3.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="sport">
+                              <img src="images/SPORT/3.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="landskap">
+                              <img src="images/LANDSKAP/6.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="musikk">
+                              <img src="images/MUSIKK/6.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="portretter">
+                              <img src="images/PORTRETTER/6.jpg" class="grid-item fade-up">
+                           </div>
+                           <a href="#" onclick="showSection('naturvinforbundet', true)">
+                              <div class="case-wrapper fade-up" data-tags="presse">
+                                 <img src="images/PRESSE/6.jpg" class="grid-item fade-up">
+                              </div>
+                           </a>
+                           <div class="case-wrapper fade-up" data-tags="presse">
+                              <img src="images/PRESSE/7.jpg" class="grid-item fade-up">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
       </div>
-   </div>
-</div>
-</div>
-</div>
+      </div>
 
 
 
-    <!-- Other sections go here -->
+      <!-- Other sections go here -->
 
-</main>
-<div id="om-meg" class="section" style="display: none;">
-    <section class="no-top-padding">
-        <div class="seksjon-wrapper">
+   </main>
+   <div id="om-meg" class="section" style="display: none;">
+      <section class="no-top-padding">
+         <div class="seksjon-wrapper">
             <div class="innhold-50 fade-up center-align">
-                 <h1 class="ommeg-heading fade-up">Hallo! Mitt navn er Andreas Lekang 👋🏻</h1>
+               <h1 class="ommeg-heading fade-up">Hallo! Mitt navn er Andreas Lekang 👋🏻</h1>
             </div>
-                <div class="innhold-50 right-align fade-up">
-                    <img src="images/PORTRETT.jpg" alt="Portrait" class="portrett-bilde fade-up">
-            </div>
-        </div>
-
-            <section class="no-top-padding">
-        <div class="seksjon-wrapper reverse">
-                <div class="innhold-50 left-align fade-up">
-                    <img src="images/PORTRETT-02.jpg" alt="Portrait" class="portrett-bilde fade-up">
-            </div>
-                        <div class="innhold-50 fade-up center-align">
-                 <h1 class="ommeg-heading-left fade-up">Jeg er en selvstendig fotograf med base i Oslo. Min lidenskap ligger i å fange øyeblikk, enten det er gjennom stillbilder eller levende bilder.</h1>
-            </div>
-        </div>
-    </section>
-
-    <section class="no-top-padding">
-        <div class="seksjon-wrapper">
-            <div class="innhold-50 fade-up center-align">
-                 <h1 class="ommeg-heading fade-up">Min fleksibilitet gjør at jeg tar på meg alle typer oppdrag med selvtillit. Med solid erfaring innen visuell journalistikk og redaksjonelt arbeid, kan jeg levere det du trenger.</h1>
-            </div>
-                <div class="innhold-50 right-align fade-up">
-                    <img src="https://images.pexels.com/photos/5872788/pexels-photo-5872788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portrait" class="portrett-bilde fade-up">
-            </div>
-        </div>
-    </section>
-
-</div>
-<main>
-    <div id="kontakt" class="section" style="display: none;">
-    <section class="no-top-padding">
-        <div class="seksjon-wrapper">
-            <div class="innhold-50 fade-up center-align">
-                 <h1 class="ommeg-heading fade-up">La oss snakke om det nye prosjektet vårt 🚀</h1>
-                 <div class="contact-wrapper">
-                                 <a href="mailto:andreas.lekang@gmail.com" class="email-button"><p>E-post</p></a>
-                                <a href="tel:+4794196040" class="email-button"><p>Telefon</p></a>
+            <div class="innhold-50 right-align fade-up">
+               <img src="images/PORTRETT.jpg" alt="Portrait" class="portrett-bilde fade-up">
             </div>
          </div>
-                <div class="innhold-50 right-align fade-up">
-                    <img src="https://images.pexels.com/photos/2929411/pexels-photo-2929411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portrait" class="portrett-bilde fade-up">
-            </div>
-        </div>
-    </section>
-</div>
-</div>
-<div id="naturvinforbundet" class="section" style="display: none;">
-<section class="no-top-padding">
-<div class="seksjon-wrapper">
-   <div class="innhold-100 fade-up visible">
-      <div class="myGallery">
-         <div class="grid-container naturvinforbundet">
-            <div class="row fade-up">
-               <div class="case-wrapper fade-up" data-tags="presse">
-                  <img src="images/PRESSE/6.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="presse">
-                  <img src="images/NATURVINFORBUNDET/1.jpg" class="grid-item fade-up">
-               </div>
-            </div>
-            <div class="row fade-up">
-               <div class="case-wrapper fade-up" data-tags="presse">
-                  <img src="images/NATURVINFORBUNDET/2.jpg" class="grid-item fade-up">
-               </div>
-               <div class="case-wrapper fade-up" data-tags="presse">
-                  <img src="images/NATURVINFORBUNDET/3.jpg" class="grid-item fade-up">
-               </div>
-            </div>
 
-</main>
-<footer>
-    <div class="watermark">
-    <a class="watermark" href="https://marcusevensen.no/"> Laget av Marcus Evensen ® 2025</a>
-</div>
-    </footer>
+         <section class="no-top-padding">
+            <div class="seksjon-wrapper reverse">
+               <div class="innhold-50 left-align fade-up">
+                  <img src="images/PORTRETT-02.jpg" alt="Portrait" class="portrett-bilde fade-up">
+               </div>
+               <div class="innhold-50 fade-up center-align">
+                  <h1 class="ommeg-heading-left fade-up">Jeg er en selvstendig fotograf med base i Oslo. Min lidenskap
+                     ligger i å fange øyeblikk, enten det er gjennom stillbilder eller levende bilder.</h1>
+               </div>
+            </div>
+         </section>
+
+         <section class="no-top-padding">
+            <div class="seksjon-wrapper">
+               <div class="innhold-50 fade-up center-align">
+                  <h1 class="ommeg-heading fade-up">Min fleksibilitet gjør at jeg tar på meg alle typer oppdrag med
+                     selvtillit. Med solid erfaring innen visuell journalistikk og redaksjonelt arbeid, kan jeg levere
+                     det du trenger.</h1>
+               </div>
+               <div class="innhold-50 right-align fade-up">
+                  <img
+                     src="https://images.pexels.com/photos/5872788/pexels-photo-5872788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                     alt="Portrait" class="portrett-bilde fade-up">
+               </div>
+            </div>
+         </section>
+
+   </div>
+   <main>
+      <div id="kontakt" class="section" style="display: none;">
+         <section class="no-top-padding">
+            <div class="seksjon-wrapper">
+               <div class="innhold-50 fade-up center-align">
+                  <h1 class="ommeg-heading fade-up">La oss snakke om det nye prosjektet vårt 🚀</h1>
+                  <div class="contact-wrapper">
+                     <a href="mailto:andreas.lekang@gmail.com" class="email-button">
+                        <p>E-post</p>
+                     </a>
+                     <a href="tel:+4794196040" class="email-button">
+                        <p>Telefon</p>
+                     </a>
+                  </div>
+               </div>
+               <div class="innhold-50 right-align fade-up">
+                  <img
+                     src="https://images.pexels.com/photos/2929411/pexels-photo-2929411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                     alt="Portrait" class="portrett-bilde fade-up">
+               </div>
+            </div>
+         </section>
+      </div>
+      </div>
+      <div id="naturvinforbundet" class="section" style="display: none;">
+         <section class="no-top-padding">
+            <div class="seksjon-wrapper">
+               <div class="innhold-100 fade-up visible">
+                  <div class="myGallery">
+                     <div class="grid-container naturvinforbundet">
+                        <div class="row fade-up">
+                           <div class="case-wrapper fade-up" data-tags="presse">
+                              <img src="images/PRESSE/6.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="presse">
+                              <img src="images/NATURVINFORBUNDET/1.jpg" class="grid-item fade-up">
+                           </div>
+                        </div>
+                        <div class="row fade-up">
+                           <div class="case-wrapper fade-up" data-tags="presse">
+                              <img src="images/NATURVINFORBUNDET/2.jpg" class="grid-item fade-up">
+                           </div>
+                           <div class="case-wrapper fade-up" data-tags="presse">
+                              <img src="images/NATURVINFORBUNDET/3.jpg" class="grid-item fade-up">
+                           </div>
+                        </div>
+
+   </main>
+   <footer>
+      <div class="watermark">
+         <a class="watermark" href="https://marcusevensen.no/"> Laget av Marcus Evensen ® 2025</a>
+      </div>
+   </footer>
 </body>
 </body>
+
 </html>
